@@ -13,6 +13,7 @@ tasks:
     cmds:
       - yarn workspaces run publish-image
 
+# Deps - should not be run by independent tasks
   set-new-version:
     cmds:
       - yarn set-new-version:ci
