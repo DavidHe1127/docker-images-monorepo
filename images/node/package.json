@@ -2,9 +2,8 @@
   "name": "node",
   "version": "1.1.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo $INIT_CWD"
   },
   "keywords": [],
   "author": "",

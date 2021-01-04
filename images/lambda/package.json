@@ -2,9 +2,8 @@
   "name": "lambda",
   "version": "1.0.2",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo $INIT_CWD"
   },
   "keywords": [],
   "author": "",

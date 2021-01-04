@@ -8,6 +8,7 @@
     "images/*"
   ],
   "scripts": {
+    "build": "lerna run build",
     "print-new-version": "lerna version --conventional-commits",
     "print-new-version:ci": "lerna version --conventional-commits --yes"
   }
