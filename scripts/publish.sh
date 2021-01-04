@@ -5,7 +5,7 @@ set -euo pipefail
 IMAGE_NAME="$npm_package_name"
 VERSION_TAG="$npm_package_version"
 
-
+echo "new ver tag... $IMAGE_NAME:$VERSION_TAG"
 
 # VERSION_TAG=$(cat ../../lerna.json | jq -r '.version')
 

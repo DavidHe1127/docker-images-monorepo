@@ -2,8 +2,8 @@ version: '3'
 
 tasks:
   build:
-    # deps:
-    #   - set-new-version
+    deps:
+      - set-new-version
     cmds:
       - yarn workspaces run build
 
@@ -15,4 +15,4 @@ tasks:
 
   set-new-version:
     cmds:
-      - yarn set-new-version
+      - yarn set-new-version:ci
