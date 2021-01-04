@@ -1,4 +1,4 @@
-# docker-images
+# docker-images-monorepo
 
 Demonstrate how lerna can help with developing and managing multiple docker images in monorepo setup. Images are versioned and managed independently.
 
