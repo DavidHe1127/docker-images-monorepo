@@ -1,7 +1,6 @@
 {
   "packages": ["images/*"],
   "version": "independent",
-
   "npmClient": "yarn",
   "command": {
     "version": {

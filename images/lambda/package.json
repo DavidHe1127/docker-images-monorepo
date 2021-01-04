@@ -3,8 +3,8 @@
   "version": "1.0.2",
   "description": "",
   "scripts": {
-    "build": "$INIT_CWD/scripts/build.sh",
-    "publish-image": "$INIT_CWD/scripts/publish.sh"
+    "build": "../../scripts/build.sh",
+    "publish-image": "../../scripts/publish.sh"
   },
   "keywords": [],
   "author": "",

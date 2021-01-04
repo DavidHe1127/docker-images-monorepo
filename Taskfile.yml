@@ -2,16 +2,16 @@ version: '3'
 
 tasks:
   build:
-    deps:
-      - set-new-version
+    # deps:
+    #   - set-new-version
     cmds:
-      - yarn build
+      - yarn workspaces run build
 
   publish:
     deps:
       - set-new-version
     cmds:
-      - yarn publish-image
+      - yarn workspaces run publish-image
 
   set-new-version:
     cmds:
