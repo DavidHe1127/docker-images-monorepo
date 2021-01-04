@@ -8,8 +8,8 @@
     "images/*"
   ],
   "scripts": {
-    "build": "lerna run build",
-    "publish-image": "lerna run publish-image",
+    "build": "lerna run build --use-workspaces",
+    "publish-image": "lerna run publish-image --use-workspaces",
     "set-new-version": "lerna exec -- lerna version --conventional-commits",
     "set-new-version:ci": "lerna version --conventional-commits --yes"
   }
