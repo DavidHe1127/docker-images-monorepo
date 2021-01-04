@@ -2,12 +2,13 @@
   "name": "docker-images",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "3.22.1"
   },
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "print-new-version": "lerna version --conventional-commits"
+    "print-new-version": "lerna version --conventional-commits",
+    "print-new-version:ci": "lerna version --conventional-commits --yes"
   }
 }
