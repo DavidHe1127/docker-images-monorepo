@@ -6,5 +6,8 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "print-new-version": "lerna version --conventional-commits"
+  }
 }
