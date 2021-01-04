@@ -5,7 +5,7 @@
     "lerna": "3.22.1"
   },
   "workspaces": [
-    "packages/*"
+    "images/*"
   ],
   "scripts": {
     "print-new-version": "lerna version --conventional-commits",
