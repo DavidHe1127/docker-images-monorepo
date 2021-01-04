@@ -10,7 +10,7 @@
   "scripts": {
     "build": "lerna run build",
     "publish-image": "lerna run publish-image",
-    "set-new-version": "lerna run set-new-version",
+    "set-new-version": "lerna exec -- lerna version --conventional-commits",
     "set-new-version:ci": "lerna version --conventional-commits --yes"
   }
 }
