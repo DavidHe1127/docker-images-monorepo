@@ -3,7 +3,9 @@
   "version": "1.0.2",
   "description": "",
   "scripts": {
-    "build": "echo $INIT_CWD"
+    "build": "$INIT_CWD/scripts/build.sh",
+    "publish-image": "$INIT_CWD/scripts/publish.sh",
+    "set-new-version": "lerna version --conventional-commits"
   },
   "keywords": [],
   "author": "",

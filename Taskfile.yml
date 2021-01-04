@@ -2,9 +2,17 @@ version: '3'
 
 tasks:
   build:
+    deps:
+      - set-new-version
     cmds:
       - yarn build
 
-  assets:
+  publish:
+    deps:
+      - set-new-version
     cmds:
-      - minify -o public/style.css src/css
+      - yarn publish-image
+
+  set-new-version:
+    cmds:
+      - yarn set-new-version

@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "build": "lerna run build",
-    "print-new-version": "lerna version --conventional-commits",
-    "print-new-version:ci": "lerna version --conventional-commits --yes"
+    "publish-image": "lerna run publish-image",
+    "set-new-version": "lerna run set-new-version",
+    "set-new-version:ci": "lerna version --conventional-commits --yes"
   }
 }

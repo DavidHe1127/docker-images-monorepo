@@ -2,6 +2,6 @@
 
 set -euo pipefail
 
-IMAGE_NAME="$1"
+IMAGE_NAME="$npm_package_name"
 
-docker build -t "${IMAGE_NAME}" . > /dev/null
+docker build -t "${IMAGE_NAME}" .

@@ -2,8 +2,12 @@
 
 set -euo pipefail
 
-IMAGE_NAME="$1"
-VERSION_TAG=$(cat ../../lerna.json | jq -r '.version')
+IMAGE_NAME="$npm_package_name"
+VERSION_TAG="$npm_package_version"
+
+
+
+# VERSION_TAG=$(cat ../../lerna.json | jq -r '.version')
 
 # echo "Publishing ${IMAGE_NAME} with version ${VERSION_TAG} to ${DOCKER_REGISTRY}"
 
