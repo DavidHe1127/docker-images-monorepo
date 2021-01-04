@@ -8,7 +8,7 @@
     "images/*"
   ],
   "scripts": {
-    "print-new-version": "lerna version --conventional-commits",
-    "print-new-version:ci": "lerna version --conventional-commits --yes"
+    "set-new-version": "lerna version --conventional-commits",
+    "set-new-version:ci": "lerna version --conventional-commits --yes"
   }
 }

@@ -1,11 +1,10 @@
 {
   "packages": ["images/*"],
   "version": "independent",
-  "useWorkspaces": true,
   "npmClient": "yarn",
   "command": {
     "version": {
-      "allowBranch": ["main"],
+      "allowBranch": ["add-publish-image"],
       "ignoreChanges": ["**/*.md"]
     }
   }
