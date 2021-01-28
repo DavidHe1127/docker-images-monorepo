@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/DavidHe1127/docker-images/compare/lambda@1.1.0...lambda@1.1.1) (2021-01-28)
+
+**Note:** Version bump only for package lambda
+
+
+
+
+
 # [1.1.0](https://github.com/DavidHe1127/docker-images/compare/lambda@1.0.2...lambda@1.1.0) (2021-01-04)
 
 
