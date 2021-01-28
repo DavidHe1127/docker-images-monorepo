@@ -1,5 +1,8 @@
 version: '3'
 
+env:
+  ROOT_PATH: $(pwd)
+
 tasks:
   build:
     deps:
@@ -17,3 +20,13 @@ tasks:
   set-new-version:
     cmds:
       - yarn set-new-version
+
+  changed:
+    cmds:
+      # need to handle when no change
+      - yarn --silent changed | jq --raw-output .[].name > changed.txt
+
+  hasChanged:
+    cmds:
+      - task: changed
+      - yarn workspaces run hasChanged

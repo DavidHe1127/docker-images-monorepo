@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "../../scripts/build.sh",
-    "publish-image": "../../scripts/publish.sh"
+    "publish-image": "../../scripts/publish.sh",
+    "hasChanged": "../../scripts/hasChanged.sh"
   },
   "keywords": [],
   "author": "",
