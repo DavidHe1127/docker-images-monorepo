@@ -3,9 +3,9 @@
   "version": "1.2.1",
   "description": "",
   "scripts": {
-    "build": "../../scripts/build.sh",
-    "publish-image": "../../scripts/publish.sh",
-    "hasChanged": "../../scripts/hasChanged.sh"
+    "build": "$ROOT_PATH/scripts/build.sh",
+    "publish-image": "$ROOT_PATH/scripts/publish.sh",
+    "hasChanged": "$ROOT_PATH/scripts/hasChanged.sh"
   },
   "keywords": [],
   "author": "",
