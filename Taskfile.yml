@@ -16,4 +16,4 @@ tasks:
 # Deps
   set-new-version:
     cmds:
-      - yarn set-new-version:ci
+      - yarn set-new-version

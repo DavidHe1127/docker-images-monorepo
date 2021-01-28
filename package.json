@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "set-new-version": "lerna version --conventional-commits",
-    "set-new-version:ci": "lerna version --conventional-commits --yes"
+    "set-new-version:ci": "lerna version --conventional-commits --yes",
+    "changed": "lerna changed"
   }
 }
