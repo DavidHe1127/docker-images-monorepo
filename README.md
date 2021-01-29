@@ -2,8 +2,9 @@
 
 ## How to test it?
 
+- Run `yarn` from root to install deps.
 - Make a change in Dockerfile inside either `lambda` or `node` directory.
-- Submit a commit that follows conventional commit criteria.
+- Submit a commit that follows [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) criteria.
 - From project root, run `./run.sh`.
 
 You will see what's been changed and associated version for next release.
