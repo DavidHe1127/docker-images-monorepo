@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/DavidHe1127/docker-images-monorepo/compare/node@1.2.2...node@1.2.3) (2021-01-29)
+
+
+### Bug Fixes
+
+* add change ([be5ba02](https://github.com/DavidHe1127/docker-images-monorepo/commit/be5ba027a990d187968516e987219e2d232b957c))
+
+
+
+
+
 ## [1.2.2](https://github.com/DavidHe1127/docker-images-monorepo/compare/node@1.2.1...node@1.2.2) (2021-01-29)
 
 
