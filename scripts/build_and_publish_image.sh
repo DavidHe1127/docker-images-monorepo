@@ -24,5 +24,3 @@ if [ $? -eq 0 ]; then
 else
   echo "${IMAGE_NAME} not changed, skip"
 fi;
-
-
