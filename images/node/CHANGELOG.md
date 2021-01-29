@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.1 (2021-01-29)
+
+**Note:** Version bump only for package node
+
+
+
+
+
 ## [1.3.1](https://github.com/DavidHe1127/docker-images-monorepo/compare/node@1.3.0...node@1.3.1) (2021-01-29)
 
 
