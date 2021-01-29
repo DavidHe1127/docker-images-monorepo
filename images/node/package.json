@@ -1,6 +1,6 @@
 {
   "name": "node",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "scripts": {
     "build_and_publish_image": "$ROOT_PATH/scripts/build_and_publish_image.sh"
