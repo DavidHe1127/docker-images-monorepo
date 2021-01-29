@@ -2,6 +2,14 @@
 
 set -uo pipefail
 
+function build() {
+  docker build -t "${IMAGE_NAME}" .
+}
+
+function release() {
+  echo "new tag... $IMAGE_NAME:$VERSION_TAG"
+}
+
 IMAGE_NAME="$npm_package_name"
 VERSION_TAG="$npm_package_version"
 
@@ -18,10 +26,3 @@ else
 fi;
 
 
-function build() {
-  docker build -t "${IMAGE_NAME}" .
-}
-
-function release() {
-  echo "new tag... $IMAGE_NAME:$VERSION_TAG"
-}
