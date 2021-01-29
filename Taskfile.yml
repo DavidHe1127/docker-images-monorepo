@@ -4,29 +4,24 @@ env:
   ROOT_PATH: $(pwd)
 
 tasks:
-  build:
+  build_and_publish_image:
     deps:
       - set-new-version
     cmds:
-      - yarn workspaces run build
+      - yarn workspaces run build_and_publish_image
 
-  publish:
-    deps:
-      - set-new-version
-    cmds:
-      - yarn workspaces run publish-image
-
-# Deps
+  # set new version in package.json if changes detected
   set-new-version:
+    dpes:
+      - changed-images
     cmds:
       - yarn set-new-version
 
   changed-images:
     cmds:
-      # need to handle when no change
       - yarn --silent changed | jq --raw-output .[].name > changed.txt
 
-  if-changed:
-    cmds:
-      - task: changed-images
-      - yarn workspaces run ifChanged
+  # if-changed:
+  #   cmds:
+  #     - task: changed-images
+  #     - yarn workspaces run ifChanged

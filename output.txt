@@ -1,0 +1,3 @@
+yarn run v1.22.10
+$ lerna version --conventional-commits
+Done in 3.32s.
