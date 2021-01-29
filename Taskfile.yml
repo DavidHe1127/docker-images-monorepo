@@ -21,12 +21,12 @@ tasks:
     cmds:
       - yarn set-new-version
 
-  changed:
+  changed-images:
     cmds:
       # need to handle when no change
       - yarn --silent changed | jq --raw-output .[].name > changed.txt
 
-  hasChanged:
+  if-changed:
     cmds:
-      - task: changed
-      - yarn workspaces run hasChanged
+      - task: changed-images
+      - yarn workspaces run ifChanged

@@ -5,7 +5,7 @@
   "scripts": {
     "build": "$ROOT_PATH/scripts/build.sh",
     "publish-image": "$ROOT_PATH/scripts/publish.sh",
-    "hasChanged": "$ROOT_PATH/scripts/hasChanged.sh"
+    "ifChanged": "$ROOT_PATH/scripts/ifChanged.sh"
   },
   "keywords": [],
   "author": "",
