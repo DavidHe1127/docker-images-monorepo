@@ -20,8 +20,3 @@ tasks:
   changed-images:
     cmds:
       - yarn --silent changed | jq --raw-output .[].name > changed.txt
-
-  # if-changed:
-  #   cmds:
-  #     - task: changed-images
-  #     - yarn workspaces run ifChanged
