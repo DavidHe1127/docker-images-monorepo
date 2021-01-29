@@ -1,0 +1,15 @@
+{
+  "name": "docker-images",
+  "private": true,
+  "devDependencies": {
+    "lerna": "3.22.1"
+  },
+  "workspaces": [
+    "images/*"
+  ],
+  "scripts": {
+    "set-new-version:ci": "lerna version --conventional-commits --yes",
+    "set-new-version": "lerna version --conventional-commits",
+    "changed": "lerna changed --json"
+  }
+}

@@ -1,0 +1,20 @@
+version: '3'
+
+env:
+  ROOT_PATH: $(pwd)
+
+tasks:
+  build_and_publish_image:
+    cmds:
+      - task: set-new-version
+      - yarn workspaces run build_and_publish_image
+
+  # set new version in package.json if changes detected
+  set-new-version:
+    cmds:
+      - task: changed-images
+      - yarn set-new-version:ci
+
+  changed-images:
+    cmds:
+      - yarn --silent changed | jq --raw-output .[].name > changed.txt

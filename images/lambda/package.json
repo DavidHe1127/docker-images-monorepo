@@ -1,0 +1,11 @@
+{
+  "name": "lambda",
+  "version": "1.1.2",
+  "description": "",
+  "scripts": {
+    "build_and_publish_image": "$ROOT_PATH/scripts/build_and_publish_image.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
