@@ -1,6 +1,13 @@
 # docker-images-monorepo
 
-Demonstrate how lerna can help with developing and managing multiple docker images in monorepo setup. Images are versioned and managed independently.
+## How to test it?
 
-- Use `npx lerna init --independent` to independently manage each package's version.
+- Make a change in Dockerfile inside either `lambda` or `node` directory.
+- Submit a commit that follows conventional commit criteria.
+- From project root, run `./run.sh`.
 
+You will see what's been changed and associated version for next release.
+
+## Note
+
+If change does not require a new release of image, don't use conventional commits.
