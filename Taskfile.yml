@@ -5,16 +5,14 @@ env:
 
 tasks:
   build_and_publish_image:
-    deps:
-      - set-new-version
     cmds:
+      - task: set-new-version
       - yarn workspaces run build_and_publish_image
 
   # set new version in package.json if changes detected
   set-new-version:
-    dpes:
-      - changed-images
     cmds:
+      - task: changed-images
       - yarn set-new-version
 
   changed-images:
