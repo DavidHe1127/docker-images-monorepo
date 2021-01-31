@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3](https://github.com/kasada/docker-images-monorepo/compare/lambda@0.0.2...lambda@0.0.3) (2021-01-31)
+
+
+### Bug Fixes
+
+* change lambda ([00e62fa](https://github.com/kasada/docker-images-monorepo/commit/00e62fad6f053d7ba38ce5f137aff4b8cabd088b))
+
+
+
+
+
 ## [0.0.2](https://github.com/kasada/docker-images-monorepo/compare/lambda@0.0.1...lambda@0.0.2) (2021-01-31)
 
 
