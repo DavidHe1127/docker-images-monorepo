@@ -1,5 +1,7 @@
 # docker-images-monorepo
 
+It demonstrates independent version calculations against multiple docker images managed by Lerna. It however DOES NOT cover image release process.
+
 ## How to test it?
 
 - Run `yarn` from root to install deps.
