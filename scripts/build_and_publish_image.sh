@@ -8,6 +8,7 @@ function build() {
 
 function release() {
   echo "new tag... $IMAGE_NAME:$VERSION_TAG"
+  echo "login -> tag image -> push image 🚀"
 }
 
 IMAGE_NAME="$npm_package_name"
@@ -16,11 +17,10 @@ VERSION_TAG="$npm_package_version"
 $(grep -Fxq "${IMAGE_NAME}" "${ROOT_PATH}/changed.txt")
 
 if [ $? -eq 0 ]; then
-  # build image
-  echo "${IMAGE_NAME} has chnaged"
+  echo "${IMAGE_NAME} has Chnaged"
 
   build
   release
 else
-  echo "${IMAGE_NAME} not changed, skip"
+  echo "${IMAGE_NAME} Not Changed, No Action Required"
 fi;

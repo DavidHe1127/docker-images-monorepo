@@ -2,8 +2,8 @@
 dag: true
 
 steps:
-  - label: ':docker: Calculate next release version if required'
+  - label: ':docker: Build & Publish images if necessary'
     id: 'lint'
-    command: 'task '
+    command: 'task build_and_publish_image'
     agents:
       queue: 'io-pr'
