@@ -2,8 +2,8 @@
 dag: true
 
 steps:
-  - label: ':lint-roller: Lint'
+  - label: ':docker: Calculate next release version if required'
     id: 'lint'
-    command: echo 'test'
+    command: 'task '
     agents:
       queue: 'io-pr'

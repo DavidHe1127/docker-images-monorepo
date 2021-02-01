@@ -5,7 +5,8 @@
   "command": {
     "version": {
       "allowBranch": ["main"],
-      "ignoreChanges": ["**/*.md", "**/package.json"]
+      "ignoreChanges": ["**/*.md", "**/package.json"],
+      "message": "chore(release): Publish Images"
     }
   }
 }
