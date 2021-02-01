@@ -1,0 +1,9 @@
+---
+dag: true
+
+steps:
+  - label: ':lint-roller: Lint'
+    id: 'lint'
+    command: echo 'test'
+    agents:
+      queue: 'io-pr'
