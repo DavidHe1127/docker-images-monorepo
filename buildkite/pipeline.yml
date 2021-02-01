@@ -6,4 +6,4 @@ steps:
     id: 'lint'
     command: 'task build_and_publish_image'
     agents:
-      queue: 'io-pr'
+      queue: 'default'
