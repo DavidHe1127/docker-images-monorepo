@@ -13,6 +13,8 @@ tasks:
   set-new-version:
     cmds:
       - task: changed-images
+      # call lerna through yarn to avoid installing lerna cli globally
+      # another option is to use npx
       - yarn set-new-version:ci
 
   changed-images:

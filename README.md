@@ -14,3 +14,7 @@ You will see what's been changed and associated version for next release.
 ## Note
 
 If change does not require a new release of image, don't use conventional commits.
+
+### Lerna
+
+- By default, `lerna version` will push the committed and tagged changes to the configured git remote. Pass --no-push to disable this behavior.
