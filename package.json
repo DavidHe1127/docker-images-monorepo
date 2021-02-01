@@ -11,5 +11,6 @@
     "set-new-version:ci": "lerna version --conventional-commits --yes",
     "set-new-version": "lerna version --conventional-commits",
     "changed": "lerna changed --json"
-  }
+  },
+  "changedImages": ["lambda", "node"]
 }

@@ -14,6 +14,11 @@ function release() {
 IMAGE_NAME="$npm_package_name"
 VERSION_TAG="$npm_package_version"
 
+RES="$npm_package_changedImages"
+
+echo "$RES"
+
+
 $(grep -Fxq "${IMAGE_NAME}" "${ROOT_PATH}/changed.txt")
 
 if [ $? -eq 0 ]; then
