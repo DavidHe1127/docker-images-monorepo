@@ -44,5 +44,5 @@ tasks:
 
   configure-git:
     cmds:
-      - docker-compose run --rm node ./test.sh
+      - docker-compose run --rm node sh ./test.sh
 

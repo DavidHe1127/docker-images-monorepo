@@ -3,8 +3,8 @@ services:
   node:
     image: base-image
     environment:
-      GH_TOKEN
-      ROOT_PATH
+      GH_TOKEN:
+      ROOT_PATH:
     volumes:
       - .:/work
     working_dir: /work
