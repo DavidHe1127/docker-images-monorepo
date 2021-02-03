@@ -2,6 +2,8 @@ version: '3'
 
 env:
   ROOT_PATH: $(pwd)
+  GH_TOKEN:
+    sh: aws ssm get-parameter --profile kasada-dev --region ap-southeast-2 --name /ops/ci/lerna-git-ssh --with-decryption --output text --query Parameter.Value
 
 tasks:
   build_and_publish_image:
@@ -13,10 +15,36 @@ tasks:
   set-new-version:
     cmds:
       - task: changed-images
+      - task: configure-git
       # call lerna through yarn to avoid installing lerna cli globally
       # another option is to use npx
-      - yarn set-new-version:ci
+      # - docker-compose run --rm node yarn set-new-version:ci
 
   changed-images:
+    deps:
+      - install-deps
     cmds:
-      - yarn --silent changed | jq --raw-output .[].name > changed.txt
+      - docker-compose run --rm node sh -c 'yarn --silent changed | jq --raw-output .[].name > changed.txt'
+
+  install-deps:
+    deps:
+      - bake-base-image
+    cmds:
+      - docker-compose run --rm node yarn install --frozen-lockfile
+    sources:
+      - package.json
+      - yarn.lock
+    generates:
+      - node_modules/**
+    method: timestamp
+
+  bake-base-image:
+    cmds:
+      - docker build -t base-image .
+
+  configure-git:
+    cmds:
+      - |
+      docker-compose run --rm node ./test.sh
+
+

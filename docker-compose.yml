@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  node:
+    image: base-image
+    environment:
+      GH_TOKEN
+      ROOT_PATH
+    volumes:
+      - .:/work
+    working_dir: /work
