@@ -7,5 +7,4 @@ services:
       ROOT_PATH:
     volumes:
       - .:/work
-      - .ssh:/.ssh
     working_dir: /work
