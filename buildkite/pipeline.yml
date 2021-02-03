@@ -6,4 +6,4 @@ steps:
     id: 'lint'
     command: 'task set-new-version'
     agents:
-      queue: 'aws'
+      queue: 'lightweight'
