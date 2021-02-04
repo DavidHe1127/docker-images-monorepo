@@ -1,6 +1,6 @@
 {
   "name": "lambda",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "scripts": {
     "build_and_publish_image": "$ROOT_PATH/scripts/build_and_publish_image.sh"
