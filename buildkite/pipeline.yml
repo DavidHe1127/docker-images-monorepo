@@ -1,9 +1,0 @@
----
-dag: true
-
-steps:
-  - label: ':docker: Build & Publish images if necessary'
-    id: 'lint'
-    command: 'task set-new-version'
-    agents:
-      queue: 'default'

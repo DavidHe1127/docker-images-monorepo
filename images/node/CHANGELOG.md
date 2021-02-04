@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/kasada/docker-images-monorepo/compare/node@0.1.3...node@0.2.0) (2021-02-04)
+
+
+### Features
+
+* **node:** minor ([229f979](https://github.com/kasada/docker-images-monorepo/commit/229f979b5b7e22a8c0d8470d45e002e3db9d39e4))
+
+
+
+
+
+## [0.1.3](https://github.com/kasada/docker-images-monorepo/compare/node@0.1.2...node@0.1.3) (2021-02-04)
+
+
+### Bug Fixes
+
+* **node,lambda:** bump minor version ([c3c9143](https://github.com/kasada/docker-images-monorepo/commit/c3c914366521a64724eddfc3be78e007406d3b80))
+
+
+
+
+
+## [0.1.2](https://github.com/kasada/docker-images-monorepo/compare/node@0.1.1...node@0.1.2) (2021-02-04)
+
+
+### Bug Fixes
+
+* **node:** bump minor version ([f81ffe8](https://github.com/kasada/docker-images-monorepo/commit/f81ffe8acf4ed6104b7850ff1db100ae3ce7247a))
+
+
+
+
+
 ## [0.1.1](https://github.com/kasada/docker-images-monorepo/compare/node@0.1.0...node@0.1.1) (2021-02-01)
 
 

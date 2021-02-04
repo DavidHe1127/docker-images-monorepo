@@ -7,7 +7,7 @@ It demonstrates independent version calculations against multiple docker images 
 - Run `yarn` from root to install deps.
 - Make a change in Dockerfile inside either `lambda` or `node` directory.
 - Submit a commit that follows [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) criteria.
-- From project root, run `./run.sh`.
+- From project root, run `task build_and_publish_image`.
 
 You will see what's been changed and associated version for next release.
 
@@ -17,4 +17,4 @@ If change does not require a new release of image, don't use conventional commit
 
 ### Lerna
 
-- By default, `lerna version` will push the committed and tagged changes to the configured git remote. Pass --no-push to disable this behavior.
+- By default, `lerna version` will push the committed and tagged changes to the configured git remote. Pass `--no-push` to disable this behavior.
