@@ -13,7 +13,8 @@ You will see what's been changed and associated version for next release.
 
 ## Note
 
-If change does not require a new release of image, don't use conventional commits.
+- If change does not require a new release of image, don't use conventional commits.
+- Version Bump/Release tagging SHOULD ONLY happen on `main` branch unless it's `prerelease`. In other words, `main` and `prerelease` should have different release channels.
 
 ### Lerna
 
